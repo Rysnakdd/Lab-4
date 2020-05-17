@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+#include<math.h>
+
+int main()
+{
+
+    int c = 1, l = 0, k2 = 0;
+    while (l < 80)
+    {
+        if (l % 2 != 0)
+        {
+            c += l;
+            k2 += 1;
+        }
+        l++;
+    }
+    c = c / k2;
+    printf("c=%d \n", c);
+    return 0;
+}
